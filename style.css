@@ -1,0 +1,129 @@
+@font-face {
+      font-family: Digital7; 
+      src: url('digital-7.ttf'); 
+     } 
+h1{
+     font-family: 'Alatsi', sans-serif;
+     font-size: 4.5rem;
+     margin: .25rem 0 .25rem;
+     padding: 0;
+     color: rgb(129, 84, 150);
+
+}
+
+h2{
+     position: absolute;
+     display: inline-block;
+     box-sizing: border-box;
+     font-family: Digital7, sans-serif;
+     font-size: 5rem;
+     top: 25%;
+     right: .5rem;
+     margin: 0;
+     padding: 0;
+     transform: translate(0, -25%);
+     color: rgba(0, 0, 0, .9);
+     letter-spacing: .1rem;
+}
+
+h3{
+     position: absolute;
+     display: inline-block;
+     font-family: Digital7, sans-serif;
+     font-size: 1.5rem;
+     color: rgba(0, 0, 0, .9);
+     bottom: 0;
+     left: 0;
+     margin: 0;
+     padding-left: .75rem;
+     padding-bottom: 1rem;
+     opacity: 0;
+}
+
+body{
+     position: relative;
+     text-align: center;
+}
+
+#calculator{
+     position: relative;
+     margin-top: 2.5rem;
+     display: inline-block;
+     content: "";
+     background-color: rgb(127, 127, 212);
+     width: 25rem;
+     height: 36rem;
+     border-radius: 10px;
+}
+
+.screen{
+     position: relative;
+     display: inline-block;
+     background-color: #6aa172;
+     width: 90%;
+     height: 4.8em;
+     padding: .5rem .5rem;
+     border-radius: 10px;
+     box-sizing: border-box;
+     text-align: right;
+}
+
+.buttons{
+     position: relative;
+     margin-top: .5rem;
+     padding: 0 1rem;
+}
+.button{
+     position: relative;
+     height: 4.7rem;
+     width: 4.7rem;
+     border-radius: 15px;
+     background-color: #474063;
+     padding: 0;
+     color: black;
+     text-align: center;
+     font-size: 2.25rem;
+     cursor: pointer;
+}
+
+.small-button{
+     position: relative;
+     height: 2.35rem;
+     width: 4.7rem;
+     border-radius: 15px;
+     background-color: #474063;
+     padding: 0;
+     color: black;
+     text-align: center;
+     font-size: 1.5rem;
+     cursor: pointer;
+}
+
+.button:active{
+     background-color: #575366;
+}
+
+.equals{
+     background-color: #ad2424;
+}
+
+.operator{
+     background-color: #333333;
+}
+.row{
+     position: relative;
+     display: flex;
+     justify-content: space-around;
+     margin: .5rem 0;
+}
+
+p{
+     position: absolute;
+     display: inline-block;
+     margin: 0;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-family: 'Alatsi', sans-serif;
+     color: white;
+}
