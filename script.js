@@ -29,6 +29,10 @@ function operate(symbol, a, b) {
      }
 }
 
+function flash(){
+     screen.querySelector("h2").classList.toggle("disappear");
+}
+
 class calculatorObject {
      constructor(symbol, value) {
           this.symbol = symbol;
@@ -84,4 +88,35 @@ document.querySelector("#clears").addEventListener("click", function(e){
      screen.querySelector("h2").textContent = "" + 0;
      currentCalculatorObject = null;
      hasInputedValue = false;
+});
+
+document.querySelector("#back").addEventListener("click", function(e){
+     let screenText = screen.querySelector("h2").textContent;
+     if (screenText.length <= 1)
+     {
+          screen.querySelector("h2").textContent = 0;
+          hasInputedValue = false; 
+     }
+     else
+     {
+          screen.querySelector("h2").textContent =  screen.querySelector("h2").textContent.slice(0, screen.querySelector("h2").textContent.length - 1);
+     }
+});
+
+document.querySelector("#negative").addEventListener("click", function(e){
+     if (screen.querySelector("h2").textContent !== 0 && screen.querySelector("h2").textContent.slice(0, 1) !== "-")
+     {
+          screen.querySelector("h2").textContent = "-" + screen.querySelector("h2").textContent;
+     }
+     else
+     {
+          screen.querySelector("h2").textContent = screen.querySelector("h2").textContent.slice(1, screen.querySelector("h2").textContent.length);
+     }
+});
+
+document.querySelector("#decimal").addEventListener("click", function(e){
+     if (!hasDecimal)
+     {
+          
+     }
 });

@@ -8,6 +8,11 @@ h1{
      margin: .25rem 0 .25rem;
      padding: 0;
      color: rgb(129, 84, 150);
+     text-shadow: -1px 1px rgb(88, 53, 104), 
+                          1px 1px rgb(88, 53, 104), 
+                         1px -1px rgb(88, 53, 104), 
+                        -1px -1px rgb(88, 53, 104);
+     letter-spacing: 2px;
 
 }
 
@@ -51,8 +56,9 @@ body{
      display: inline-block;
      content: "";
      background-color: rgb(127, 127, 212);
+     border: 3px solid #7a719c;
      width: 25rem;
-     height: 36rem;
+     height: 36.5rem;
      border-radius: 10px;
 }
 
@@ -64,6 +70,7 @@ body{
      height: 4.8em;
      padding: .5rem .5rem;
      border-radius: 10px;
+     border: 1px solid #3c6442;
      box-sizing: border-box;
      text-align: right;
 }
@@ -84,6 +91,9 @@ body{
      text-align: center;
      font-size: 2.25rem;
      cursor: pointer;
+     border: 1px solid #322d46af;
+     box-shadow: 1px 1px #7a719c,
+                 2px 2px #7a719c;
 }
 
 .small-button{
@@ -97,6 +107,9 @@ body{
      text-align: center;
      font-size: 1.5rem;
      cursor: pointer;
+     border: 1px solid #322d46d3;
+     box-shadow: 1px 1px #7a719c,
+                 2px 2px #7a719c;
 }
 
 .button:active{
@@ -107,8 +120,20 @@ body{
      background-color: #ad2424;
 }
 
+.equals:active{
+     background-color: #ac3c3c;
+}
+
 .operator{
      background-color: #333333;
+}
+
+.operator:active{
+     background-color: #505050;
+}
+
+.small-button:active{
+     background-color: #575366;
 }
 .row{
      position: relative;
@@ -126,4 +151,8 @@ p{
      transform: translate(-50%, -50%);
      font-family: 'Alatsi', sans-serif;
      color: white;
+}
+
+.disappear {
+     opacity: 0;
 }
