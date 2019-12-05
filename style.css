@@ -1,3 +1,6 @@
+html{
+     user-select: none;
+}
 @font-face {
       font-family: Digital7; 
       src: url('digital-7.ttf'); 
@@ -42,7 +45,6 @@ h3{
      margin: 0;
      padding-left: .75rem;
      padding-bottom: 1rem;
-     opacity: 0;
 }
 
 body{
